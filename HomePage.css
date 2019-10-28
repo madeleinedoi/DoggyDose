@@ -645,4 +645,37 @@ hr{
     width:100%;
 
 }
+<<<<<<< HEAD
 >>>>>>> b2240999c0549f5de0087f60faa87f3f045ebe86
+=======
+
+/*Awww*/
+.column-resource {
+
+    float: left;
+
+    width: 33.33%;
+
+    padding: 10px;
+
+    overflow: hidden;
+
+}
+
+
+
+/* Clearfix (clear floats) */
+
+.row-resource::after {
+
+    content: "";
+
+    clear: both;
+
+    display: table;
+
+    overflow: hidden;
+
+}
+
+>>>>>>> fe0fb13ee889efafbdb62506facb73b2757843fb
