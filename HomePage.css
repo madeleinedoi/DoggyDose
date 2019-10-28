@@ -629,3 +629,33 @@ hr{
     width:100%;
 
 }
+
+/*Awww*/
+.column-resource {
+
+    float: left;
+
+    width: 33.33%;
+
+    padding: 10px;
+
+    overflow: hidden;
+
+}
+
+
+
+/* Clearfix (clear floats) */
+
+.row-resource::after {
+
+    content: "";
+
+    clear: both;
+
+    display: table;
+
+    overflow: hidden;
+
+}
+
