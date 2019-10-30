@@ -8,85 +8,104 @@
 
 
     <meta charset="UTF-8">
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
 </head>
 <body>
-<div class="content-mission" style="max-width:1100px">
+<div class="header">
+    <h1>Responsive Image Grid</h1>
+    <p>Resize the browser window to see the responsive effect.</p>
+</div>
 
-    <div class="row-mission padding-mission64" id="mission">
-
-        <img src="Header%20Images/LINKS.png" id="links" style="width:100%; padding-top: 50px;"/>
-
-
-
-        <div class="row-resource schools">
-
-            <div class="column-resource">
-
-                <a href="https://lightbot.com/"> <img class= onlineresource src="https://static.wixstatic.com/media/cfb250_6e674575c00d49e696625406d23ef3d5~mv2.png/v1/fill/w_348,h_220,al_c,lg_1/cfb250_6e674575c00d49e696625406d23ef3d5~mv2.png" alt="codingbot" style="width:100%"></a>
-
-            </div>
-
-            <div class="column-resource">
-
-                <a href="https://scratch.mit.edu/"> <img class= onlineresource src="https://static.wixstatic.com/media/cfb250_4a0cd3e15a8146d8a4b0deeb6ca1a2a5~mv2.png/v1/fill/w_388,h_132,al_c,usm_0.66_1.00_0.01/cfb250_4a0cd3e15a8146d8a4b0deeb6ca1a2a5~mv2.png" alt="scratch" style="width:100%; padding-top: 30px;"></a>
-
-            </div>
-
-            <div class="column-resource">
-
-                <a href="https://www.madewithcode.com/"> <img class= onlineresource src="https://static.wixstatic.com/media/cfb250_79225ad72d4b4826a17cbf9e64705beb~mv2.png/v1/crop/x_213,y_0,w_666,h_500/fill/w_304,h_226,al_c,usm_0.66_1.00_0.01/cfb250_79225ad72d4b4826a17cbf9e64705beb~mv2.png" alt="madewithcode"  style="width:100%;"></a>
-
-            </div>
-
-        </div>
-
-        <div class="row-resource">
-
-            <div class="column-resource">
-
-                <a href="https://www.codecademy.com/learn"> <img class= onlineresource src="https://static.wixstatic.com/media/cfb250_0576003687f243ee8c8eed3add2d502c~mv2.png/v1/fill/w_470,h_88,al_c,q_80,usm_0.66_1.00_0.01/cfb250_0576003687f243ee8c8eed3add2d502c~mv2.webp" alt="codeacademy" style="width:100%;"></a>
-
-            </div>
-
-            <div class="column-resource">
-
-                <a href="https://www.khanacademy.org/hourofcode"> <img class= onlineresource src="https://static.wixstatic.com/media/cfb250_139bd206d76f41289bd062989ec0c84c~mv2.png/v1/crop/x_0,y_129,w_599,h_157/fill/w_484,h_128,al_c,q_80,usm_0.66_1.00_0.01/cfb250_139bd206d76f41289bd062989ec0c84c~mv2.webp" alt="khan" style="width:100%;"></a>
-
-            </div>
-
-            <div class="column-resource">
-
-                <a href="https://www.khanacademy.org/computing/computer-programming"> <img class= onlineresource src="https://static.wixstatic.com/media/cfb250_1bb73ce2141948718272da9c919830af~mv2.png/v1/crop/x_67,y_75,w_1134,h_216/fill/w_638,h_128,al_c,q_80,usm_0.66_1.00_0.01/cfb250_1bb73ce2141948718272da9c919830af~mv2.webp" alt="khan" style="width:100%;"></a>
-
-            </div>
-
-        </div>
-
-        <div class="row-resource">
-
-            <div class="column-resource">
-
-                <a href="https://www.playcodemonkey.com/"> <img class= onlineresource src="https://static.wixstatic.com/media/cfb250_bbd5571924094681b7f0fe07ffe553b1~mv2.png/v1/fill/w_500,h_236,al_c,q_80,usm_0.66_1.00_0.01/cfb250_bbd5571924094681b7f0fe07ffe553b1~mv2.webp" alt="codingmonkey" style="width:100%;"></a>
-
-            </div>
-
-            <div class="column-resource">
-
-                <a href="https://codepen.io/"> <img class= onlineresource src="https://static.wixstatic.com/media/cfb250_e333fbad5aff430db496b8270624f63c~mv2.png/v1/fill/w_960,h_480,al_c,lg_1,q_85/cfb250_e333fbad5aff430db496b8270624f63c~mv2.webp" alt="codepen" style="width:100%;"></a>
-
-            </div>
-
-            <div class="column-resource">
-
-                <a href="http://spritebox.com/flash.html"> <img class= onlineresource src="https://static.wixstatic.com/media/cfb250_ba8dcb61e60b4758a71b9ee59e4fbc98~mv2.png/v1/fill/w_370,h_230,al_c,q_80,usm_0.66_1.00_0.01/cfb250_ba8dcb61e60b4758a71b9ee59e4fbc98~mv2.webp" alt="spritebox" style="width:100%;"></a>
-
-            </div>
-
-        </div>
-
-
-
-
+<!-- Photo Grid -->
+<div class="row">
+    <div class="column">
+        <img src="http://static.businessinsider.com/image/5484d9d1eab8ea3017b17e29/image.jpg" style="width:100%">
+        <img src="https://i.imgur.com/EuHOycb.jpg" style="width:100%">
+        <img src="/w3images/falls2.jpg" style="width:100%">
+        <img src="/w3images/paris.jpg" style="width:100%">
+        <img src="/w3images/nature.jpg" style="width:100%">
+        <img src="/w3images/mist.jpg" style="width:100%">
+        <img src="/w3images/paris.jpg" style="width:100%">
     </div>
+    <div class="column">
+        <img src="https://i.redd.it/z4665wy0gi331.png" style="width:100%">
+        <img src="https://live.staticflickr.com/3055/2923305739_a6fdaa389a_b.jpg" style="width:100%">
+        <img src="/w3images/wedding.jpg" style="width:100%">
+        <img src="/w3images/mountainskies.jpg" style="width:100%">
+        <img src="/w3images/rocks.jpg" style="width:100%">
+        <img src="/w3images/underwater.jpg" style="width:100%">
+    </div>
+    <div class="column">
+        <img src="https://i.redd.it/nk6gdbcyii121.jpg" style="width:100%">
+        <img src="/w3images/rocks.jpg" style="width:100%">
+        <img src="/w3images/falls2.jpg" style="width:100%">
+        <img src="/w3images/paris.jpg" style="width:100%">
+        <img src="/w3images/nature.jpg" style="width:100%">
+        <img src="/w3images/mist.jpg" style="width:100%">
+        <img src="/w3images/paris.jpg" style="width:100%">
+    </div>
+    <div class="column">
+        <img src="http://www.cutestpaw.com/wp-content/uploads/2011/11/cute-dog1.jpg" style="width:100%">
+        <img src="/w3images/ocean.jpg" style="width:100%">
+        <img src="/w3images/wedding.jpg" style="width:100%">
+        <img src="/w3images/mountainskies.jpg" style="width:100%">
+        <img src="/w3images/rocks.jpg" style="width:100%">
+        <img src="/w3images/underwater.jpg" style="width:100%">
+    </div>
+</div>
 </body>
 </html>
