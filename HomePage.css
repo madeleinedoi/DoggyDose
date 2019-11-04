@@ -16,6 +16,22 @@ font-family: 'Quicksand', sans-serif;
 width: 80%;
 text-align: center;
 }
+.page{
+    text-align:right;
+    width: 100%;
+}
+#title{
+    font-weight: 900;
+}
+.title{
+display: inline-block;
+width: 20%;
+font-family: 'Quicksand', sans-serif;
+}
+.page-link{
+
+}
+
 /*!* SETUP FROM W3*!*/
 
 
@@ -520,6 +536,122 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
+<<<<<<< HEAD
+/*!* One Mission *!*/
+
+.row-mission{
+
+    /*width: 50%;*/
+
+}
+
+.col-mission{
+
+    float:left;
+
+    /*width: 100%;*/
+
+}
+
+.content-mission{
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+}
+
+.padding-mission64{
+
+    padding-top: 64px;
+
+    padding-bottom: 64px;
+
+}
+
+.padding-mission1224{
+
+    padding: 12px 24px;
+
+}
+
+.hide-small-mission{
+
+    display:none;
+
+}
+
+.img-mission{
+
+    max-width: 200px;
+
+    height: auto;
+
+    vertical-align:middle;
+
+    border-style: none;
+
+    border-radius: 4px;
+
+    opacity: 0.75;
+
+}
+
+.largefont-mission{
+
+    font-size: 18px;
+
+}
+
+text-grey-mission{
+
+    color: #757575;
+
+}
+
+tag-mission{
+
+    display: inline-block;
+
+    padding-left: 8px;
+
+    padding-right: 8px;
+
+    text-align: center;
+
+}
+
+p{
+
+    display: block;
+
+    margin-block-start: 1em;
+
+    margin-block-end: 1em;
+
+    margin-inline-start: 0px;
+
+    margin-inline-end: 0px
+
+}
+
+.col-mission .m6{
+
+    width:  49.9999%
+
+}
+
+hr{
+
+    width:100%;
+
+}
+<<<<<<< HEAD
+>>>>>>> b2240999c0549f5de0087f60faa87f3f045ebe86
+=======
+
+=======
+>>>>>>> 357b254a373976ba12fc7784dfb7cd71d39c8e9e
 /*Awww*/
 .column-resource {
 
@@ -549,3 +681,4 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+>>>>>>> fe0fb13ee889efafbdb62506facb73b2757843fb
