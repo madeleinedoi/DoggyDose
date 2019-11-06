@@ -1,0 +1,19 @@
+.page-title{
+
+}
+body{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+        font-weight: lighter;
+
+}
+.grid-container{
+display: inline-grid;
+grid-column-gap: 50px;
+grid-template-columns: 30% 30% 30%;
+justify-content: space-evenly;
+width: 90%;
+}
+.recipe-steps{
+
+}
