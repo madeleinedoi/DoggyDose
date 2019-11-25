@@ -23,6 +23,8 @@ pre{
 }
 img{
     width: 100%;
+    z-index: 1;
+
 }
 .grid-item{
 
@@ -84,10 +86,27 @@ img {
   text-align: center;
 }
 
-.container:hover .image {
-  opacity: 0.3;
+.image:hover img{
+    opacity: 0.3;
+}
+.image:hover .rating {
+    opacity: 1;
 }
 
-.container:hover .middle {
-  opacity: 1;
+
+
+
+.rating > span:hover:before {
+   content: "\2605";
+   position: absolute;
+}
+.rating{
+    z-index: 2;
+    position: relative;
+    top: -125px;
+    opacity: 0;
+    font-size: 25px;
+}
+ img:hover .rating {
+    opacity: 1;
 }
