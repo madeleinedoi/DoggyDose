@@ -306,10 +306,11 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 
-    font-family: 'Vollkorn', serif;
 
-    letter-spacing: 5px;
-
+    padding-top: 20px;
+    letter-spacing: 3px;
+    font-weight: lighter;
+    font-family: 'Lato', sans-serif;
 }
 
 /*!* NAV BAR*!*/
