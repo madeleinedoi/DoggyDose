@@ -7,22 +7,34 @@
 
     <title>Doggy Dose | MyDoggos </title>
 
+
 </head>
 <body>
-    <script src="MyDoggos.js"></script>
+
+<script type="text/javascript" src="jscode.js" >
+console.log
+function formdata()
+{
+var link = document.getElementById("link").value;
+document.writeIn("The link is:" + link);
+
+}
+</script>
+    <script src="js/MyDoggos.js"></script>
 
 
 <div class="header">
     <h1>My Doggos!</h1>
 
     <form>
-        Add your link below!
+        <p>Add your link below!</p>
         <input type="text" id="link"/>
+        <button type="submit" onclick="formData">Submit</button>
+
     </form>
-    <p>Upload Pictures of your favorite dogs!</p>
-    <p2>Put the link to your pictures in the textbox an watch your pictures appear!</p2>
+    <h2 id="result"></h2>
+
 </div>
-<input type="text" class="pic-link"/>
 
 </body>
 </html>
