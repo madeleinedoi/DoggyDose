@@ -11,16 +11,8 @@
 </head>
 <body>
 
-<script type="text/javascript" src="jscode.js" >
-console.log
-function formdata()
-{
-var link = document.getElementById("link").value;
-document.writeIn("The link is:" + link);
 
-}
-</script>
-    <script src="js/MyDoggos.js"></script>
+
 
 
 <div class="header">
@@ -29,12 +21,22 @@ document.writeIn("The link is:" + link);
     <form>
         <p>Add your link below!</p>
         <input type="text" id="link"/>
-        <button type="submit" onclick="formData">Submit</button>
+        <button type="button" onclick="return formData()">Submit</button>
 
     </form>
     <h2 id="result"></h2>
 
 </div>
 
+    <script type="text/javascript" >
+function formData()
+{
+console.log("hello");
+
+var link = document.getElementById("link").value;
+document.getElementById("result").innerHTML = "The link is:" + link;
+
+}
+</script>
 </body>
 </html>
