@@ -3,26 +3,40 @@
 <head>
     <meta charset="UTF-8">
 
-    <link rel = "stylesheet" type="text/css" href="../static/MyDoggos.css">
+    <link rel = "stylesheet" type="text/css" href="MyDoggos.css">
 
     <title>Doggy Dose | MyDoggos </title>
 
+
 </head>
 <body>
-    <script src="../static/MyDoggos.js"></script>
+
+
+
 
 
 <div class="header">
     <h1>My Doggos!</h1>
 
     <form>
-        Add your link below!
+        <p>Add your link below!</p>
         <input type="text" id="link"/>
-    </form>
-    <p>Upload Pictures of your favorite dogs!</p>
-    <p2>Put the link to your pictures in the textbox an watch your pictures appear!</p2>
-</div>
-<input type="text" class="pic-link"/>
+        <button type="button" onclick="return formData()">Submit</button>
 
+    </form>
+    <h2 id="result"></h2>
+
+</div>
+
+    <script type="text/javascript" >
+function formData()
+{
+console.log("hello");
+
+var link = document.getElementById("link").value;
+document.getElementById("result").innerHTML = "The link is:" + link;
+
+}
+</script>
 </body>
 </html>
