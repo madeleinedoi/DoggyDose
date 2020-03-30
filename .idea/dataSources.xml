@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="doggydose" uuid="d1adda0f-8b8f-4edf-a294-53da51e664b7">
+      <driver-ref>azure.ms</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
+      <jdbc-url>jdbc:sqlserver://holynamesacademy.database.windows.net:1433;database=doggydose</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="DoggyDose@server.database.windows.net" uuid="62f76b1a-0c80-4cae-9daf-1b6cd63e10b3">
+      <driver-ref>azure.ms</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
+      <jdbc-url>jdbc:sqlserver://server.database.windows.net:1433;database=DoggyDose</jdbc-url>
+    </data-source>
+  </component>
+</project>

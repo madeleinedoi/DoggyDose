@@ -26,17 +26,23 @@
     </form>
     <h2 id="result"></h2>
 
+
 </div>
 
     <script type="text/javascript" >
 function formData()
 {
-console.log("hello");
+
 
 var link = document.getElementById("link").value;
 document.getElementById("result").innerHTML = "The link is:" + link;
 
+var img = document.createElement("img");
+img.src = link;
+document.body.appendChild(img);
 }
 </script>
+
+
 </body>
 </html>
