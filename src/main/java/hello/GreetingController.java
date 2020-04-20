@@ -13,6 +13,10 @@ public class GreetingController {
     public String homepage() {
         return "HomePage";
     }
+    @GetMapping("/fronypagetemp")
+    public String homepage() {
+        return "frontpagetemp";
+    }
 
     @GetMapping("/greeting")
     public String greeting(@RequestParam(name="name", required=false, defaultValue="World") String name, Model model) {
