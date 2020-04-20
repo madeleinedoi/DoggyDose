@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel = "stylesheet" type="text/css" href="MyDoggos.css">
+    <link rel = "stylesheet" type="text/css" href="../static/HomePage.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+
+    <title>Doggy Dose | MyDoggos </title>
+
+
+</head>
+<body>
+<div class="top-nav">
+
+    <div class="bar white-banner padding-nav nav-box" style="letter-spacing:4px;">
+
+        <a href="FrontPage.html"class="bar-button button center-iframe">Doggy Dose</a>
+
+
+        <div class="right hide-small">
+            <a href="recipe%20page.html" class="bar-button button center-iframe">YUMMM</a>
+
+            <div class="dropdown">
+
+                <a href= "adorable.html" class="bar-button button center-iframe">AWWWW</a>
+
+                <div class="dropdown-content">
+                    <a href="adorable.html"class="bar-button button center-iframe" >AWWWW</a>
+                    <a href= "fooddogs.html"class="bar-button button center-iframe" >Food</a>
+                    <a href="underwaterdoggos.html" class="bar-button button center-iframe ">Underwater</a>
+                    <a href="sportdogs.html"class="bar-button button center-iframe ">Sports</a>
+                    <a href="Puppypage.html" class="bar-button button center-iframe ">Puppies</a>
+                    <a href="CorgiButtPage.html"class="bar-button button center-iframe " >Corgi Butts</a>
+                </div>
+
+
+
+            </div>
+            <a href="MyDoggos.html" class="bar-button button center-iframe">MY DOGGOS</a>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+
+
+
+<div class="header">
+    <h1>My Doggos!</h1>
+
+    <form>
+        <p>Add your link below!</p>
+        <input type="text" id="link"/>
+        <button type="button" onclick="return formData()">Submit</button>
+
+    </form>
+    <h2 id="result"></h2>
+
+
+</div>
+
+    <script type="text/javascript" >
+function formData()
+{
+
+
+var link = document.getElementById("link").value;
+document.getElementById("result").innerHTML = "The link is:" + link;
+
+var img = document.createElement("img");
+img.src = link;
+document.body.appendChild(img);
+}
+</script>
+
+
+</body>
+</html>
